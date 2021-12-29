@@ -57,11 +57,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name          | Publicly Accessible:(Ports) | Allowed IP Addresses |
 |---------------|-----------------------------|----------------------|
-| Jump Box      | Yes:22, 80, 3389            | Any                  |
+| Jump Box      | Yes:22, 80, 3389            | 75.168.94.215        |
 | Load Balancer | Yes:22, 80, 3389            | Any                  |
 | Elk Server    | Yes:22, 5601                | Any                  |
-| Web-1         | Yes:22, 80, 3389            | 10.0.0.4, 10.1.0.4   |
-| Web-2         | Yes:22, 80, 3389            | 10.0.0.4, 10.1.0.4   |
+| Web-1         | No                          | 10.0.0.4, 10.1.0.4   |
+| Web-2         | No                          | 10.0.0.4, 10.1.0.4   |
 
 * This may not be the answers you were looking for as far as access goes, but I feel like this is a more correct then saying Web-1 is not publicly availible, because people get there from port 80 after going through the load balancer. Even though the server has no public IP, they do gain access to the system. That is why I have said any IP has access to all public servers, they may only be able to access those 3 ports but that doesnt mean they can ssh into them, but those ports are still open.
 ### Elk Configuration
