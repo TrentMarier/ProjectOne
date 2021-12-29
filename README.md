@@ -66,7 +66,6 @@ A summary of the access policies in place can be found in the table below.
 | Web-1         | No                          | 10.0.0.4, 10.1.0.4   |
 | Web-2         | No                          | 10.0.0.4, 10.1.0.4   |
 
-* This may not be the answers you were looking for as far as access goes, but I feel like this is a more correct then saying Web-1 is not publicly availible, because people get there from port 80 after going through the load balancer. Even though the server has no public IP, they do gain access to the system. That is why I have said any IP has access to all public servers, they may only be able to access those 3 ports but that doesnt mean they can ssh into them, but those ports are still open.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
