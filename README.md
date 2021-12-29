@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![Network Diagram](https://drive.google.com/file/d/1ftm-8sgfiGbbHHZbsZjPCOfZxpwCh3u-/view?usp=sharing)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - [pentest.yml](users/trentPC/ProjectOne/Ansible
 
 This document contains the following details:
 - Description of the Topologu
@@ -22,13 +22,13 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly monitored, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box? 
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 	A load balancer acts as a single access point to all servers it services. This allows it to monitors the stress of traffic on those under its network to distribute traffic between all servers its monitoring and allows for restricted access to those servers if required. 
 	A jumpbox gives a secure environment, be that a computer or virtual machine, that an admin first connects to before connecting to a server or untrusted environment. This allows for a more secure server because you only need to whitelist the jumpbox as opposed to all admin of the server.
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system data.
-- _TODO: What does Filebeat watch for?
+- _TODO: What does Filebeat watch for?_
 	Filebeat monitors the log files of all VMs its monitoring and any other files its told to watch. It then logs those changes and forwards them to another program for an admin to look over later.
-- _TODO: What does Metricbeat record?
+- _TODO: What does Metricbeat record?_
 	Metricbeat monitors the operating system and services running on the VMs and logs the data. This can be viewed with another service by an admin if needed on a later date, allowing you to see stresses or other problems to your network.
 
 The configuration details of each machine may be found below.
@@ -79,7 +79,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![sudo docker ps](C:\Users\TrentPC\Desktop\PREWORK_TM\Module_2/ssforP1.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
