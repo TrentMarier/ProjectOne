@@ -79,7 +79,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![sudo docker ps](/ProjectOne/Diagrams/ssforP1.png)
+![sudo docker ps](/Diagrams/ssforP1.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
